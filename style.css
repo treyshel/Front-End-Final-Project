@@ -16,12 +16,23 @@ body {
 }
 
 #open-sidebar {
-    margin-left: -3em;
+    margin-left: -11em;
     font-size: 30px;
-    margin-top: 50px;
+    /* padding-top: 2em; */
     color: white;
     cursor: pointer;
-    position: relative;
+    /* position: absolute; */
+    line-height: 3;
+}
+
+#open-sidebar2 {
+    margin-left: -42em;
+    font-size: 30px;
+    /* padding-top: 2em; */
+    color: white;
+    cursor: pointer;
+    /* position: absolute; */
+    line-height: 3;
 }
 
 .sidenav {
@@ -93,7 +104,7 @@ body {
     color: white;
     font-size: 1.5em;
     text-align: center;
-    background-color: black;
+    background: black;
 }
 
 .sideNavContent {
@@ -109,4 +120,9 @@ body {
 
 .fa-plus-square {
     cursor: pointer;
+}
+
+.background {
+    margin-top: -10em;
+    padding: 0;
 }
