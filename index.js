@@ -445,7 +445,7 @@ function showJackets() {
         .join('');
     var html =
         [
-            '<h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
+            '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
     $('#jackets').html(html);
 }
@@ -476,7 +476,7 @@ function showCollaredShirts() {
         .join('');
     var html =
         [
-            '<h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
+            '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
     $('#collared-shirts').html(html);
 }
@@ -505,7 +505,7 @@ function showTshirts() {
         .join('');
     var html =
         [
-            '<h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
+            '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
     $('#tshirts').html(html);
 }
@@ -534,7 +534,7 @@ function showPants() {
         .join('');
     var html =
         [
-            '<h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
+            '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
     $('#pants').html(html);
 }
@@ -563,7 +563,7 @@ function showSocks() {
         .join('');
     var html =
         [
-            '<h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
+            '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
     $('#socks').html(html);
 }
@@ -592,7 +592,7 @@ function showShoes() {
         .join('');
     var html =
         [
-            '<h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
+            '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
     $('#tshirts').html(html);
 }
