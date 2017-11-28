@@ -413,11 +413,13 @@ var CLOTHING = {
 };
 // ****************sidebar animation*********************
 function openNav() {
-    document.getElementById('mySidenav').style.width = '275px';
+    // document.getElementById('mySidenav').style.width = '275px';
+    $('#mySidenav').css('width', '275px');
 }
 
 function closeNav() {
-    document.getElementById('mySidenav').style.width = '0';
+    // document.getElementById('mySidenav').style.width = '0';
+    $('#mySidenav').css('width', '0');
 }
 
 // ******************Jackets***************
@@ -594,9 +596,9 @@ function showShoes() {
         [
             '<h4><span id="open-sidebar2" onclick="openNav()">&#9776;More Clothes</span></h4><h2 class="shopping-header"><img class="header-company-logo" src="photos/company-logo.png">Elegant Spirit</h2><hr />'
         ].join('') + h;
-    $('#tshirts').html(html);
+    $('#shoes').html(html);
 }
 
 // ***********add to cart********
 
-function addToCart() {}
+// function addToCart() {}
