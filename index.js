@@ -433,7 +433,7 @@ function oneJacket(x) {
         '<p class="product-description">Type: ' +
             x.jackets.description +
             '</p>',
-        '<span class="product-description">Add to cart  <i class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
+        '<span class="product-description">Add to cart  <i onclick="addToCart" class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
     ].join('');
 }
 
@@ -464,7 +464,7 @@ function oneCollaredShirt(x) {
         '<p class="product-description">Type: ' +
             x.collared.description +
             '</p>',
-        '<span class="product-description">Add to cart  <i class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
+        '<span class="product-description">Add to cart  <i onclick="addToCart" class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
     ].join('');
 }
 
@@ -493,7 +493,7 @@ function oneTshirt(x) {
             '</p>',
         '<p class="product-description">In Stock: ' + x.tshirt.stock + '</p>',
         '<p class="product-description">Type: ' + x.tshirt.description + '</p>',
-        '<span class="product-description">Add to cart  <i class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
+        '<span class="product-description">Add to cart  <i onclick="addToCart" class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
     ].join('');
 }
 
@@ -522,7 +522,7 @@ function onePants(x) {
             '</p>',
         '<p class="product-description">In Stock: ' + x.khakis.stock + '</p>',
         '<p class="product-description">Type: ' + x.khakis.description + '</p>',
-        '<span class="product-description">Add to cart  <i class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
+        '<span class="product-description">Add to cart  <i onclick="addToCart" class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
     ].join('');
 }
 
@@ -551,7 +551,7 @@ function oneSocks(x) {
             '</p>',
         '<p class="product-description">In Stock: ' + x.socks.stock + '</p>',
         '<p class="product-description">Type: ' + x.socks.description + '</p>',
-        '<span class="product-description">Add to cart  <i class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
+        '<span class="product-description">Add to cart  <i onclick="addToCart" class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
     ].join('');
 }
 
@@ -580,7 +580,7 @@ function oneShoes(x) {
             '</p>',
         '<p class="product-description">In Stock: ' + x.shoes.stock + '</p>',
         '<p class="product-description">Type: ' + x.shoes.description + '</p>',
-        '<span class="product-description">Add to cart  <i class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
+        '<span class="product-description">Add to cart  <i onclick="addToCart" class="fa fa-plus-square" aria-hidden="true"></i></span><br><br>'
     ].join('');
 }
 
@@ -596,3 +596,7 @@ function showShoes() {
         ].join('') + h;
     $('#tshirts').html(html);
 }
+
+// ***********add to cart********
+
+function addToCart() {}
