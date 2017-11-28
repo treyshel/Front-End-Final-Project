@@ -599,4 +599,6 @@ function showShoes() {
 
 // ***********add to cart********
 
-function addToCart() {}
+// function addToCart() {
+
+// }
