@@ -413,7 +413,7 @@ var CLOTHING = {
 };
 // ****************sidebar animation*********************
 function openNav() {
-    document.getElementById('mySidenav').style.width = '250px';
+    document.getElementById('mySidenav').style.width = '275px';
 }
 
 function closeNav() {
@@ -599,6 +599,4 @@ function showShoes() {
 
 // ***********add to cart********
 
-// function addToCart() {
-
-// }
+function addToCart() {}
