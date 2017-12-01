@@ -2,44 +2,63 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.container {
-    text-align: center;
-}
-
 .font-20px {
     font-size: 20px;
     float: left;
 }
 
-#nav-title {
+#navbar-cart {
     float: right;
     font-size: 20px;
+    background-color: rgb(4, 143, 4);
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .fa-plus-square {
     cursor: pointer;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar {
     overflow: hidden;
-    background-color: lightgray;
+    background-color: rgba(133, 255, 133, 0.514);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-li {
-    cursor: pointer;
-}
-
-li a {
+.navbar a {
+    float: left;
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
 }
 
-li a:hover {
-    background-color: grey;
+a:hover {
+    color: grey;
+}
+
+#navbar-cart:hover {
+    color: black;
+}
+
+.homepage {
+    text-align: center;
+    margin-top: 8%;
+}
+
+#hr-1 {
+    width: 50em;
+}
+
+#hr-2 {
+    width: 40em;
+}
+
+#hr-3 {
+    width: 30em;
 }
