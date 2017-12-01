@@ -12,52 +12,37 @@
 </head>
 
 <body>
-    <ul>
-        <li>
-            <a onclick="showJackets()" class="active font-20px">Jackets</a>
-        </li>
-        <li>
-            <a onclick="showCollaredShirts()" class="font-20px">Collared Shirts</a>
-        </li>
-        <li>
-            <a onclick="showTshirts()" class="font-20px">T-Shirts</a>
-        </li>
-        <li>
-            <a onclick="showPants()" class="font-20px">Pants</a>
-        </li>
-        <li>
-            <a onclick="showShoes()" class="font-20px">Shoes</a>
-        </li>
-        <li>
-            <a onclick="showSocks()" class="font-20px">Socks</a>
-        </li>
-        <li>
-            <a id="nav-title">Elegant Spirit</a>
-        </li>
-    </ul>
-    <div class="container">
-        <div class="col-lg-12">
-            <div id="jackets"></div>
+    <nav class="navbar">
+        <a onclick="showJackets()" class="font-20px">Jackets</a>
+        <a onclick="showCollaredShirts()" class="font-20px">Collared Shirts</a>
+        <a onclick="showTshirts()" class="font-20px">T-Shirts</a>
+        <a onclick="showPants()" class="font-20px">Pants</a>
+        <a onclick="showShoes()" class="font-20px">Shoes</a>
+        <a onclick="showSocks()" class="font-20px">Socks</a>
+        <a id="navbar-cart">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>Total: </a>
+    </nav>
+    <div class="homepage">
+        <hr id="hr-1">
+        <h1>ELEGANT SPIRIT CLOTHING CO.</h1>
+        <div class="container">
+            <div id="jackets" class="for-sale">
+            </div>
+            <div id="collared-shirts" class="for-sale"></div>
+            <div id="tshirts" class="for-sale"></div>
+            <div id="pants" class="for-sale"></div>
+            <div id="shoes" class="for-sale"></div>
+            <div id="socks" class="for-sale"></div>
+            <div id="cart" class="for-sale"></div>
         </div>
-        <div class="col-lg-12">
-            <div id="collared-shirts"></div>
-        </div>
-        <div class="col-lg-12">
-            <div id="tshirts"></div>
-        </div>
-        <div class="col-lg-12">
-            <div id="pants"></div>
-        </div>
-        <div class="col-lg-12">
-            <div id="shoes"></div>
-        </div>
-        <div class="col-lg-12">
-            <div id="socks"></div>
-        </div>
-        <div class="col-lg-12">
-            <div id="cart"></div>
-        </div>
+        <hr id="hr-2">
+        <h2>SATISFACTION GUARANTEED</h2>
+        <hr id="hr-3">
+        <h3>SPEEDY DELIVERY</h3>
+        <hr id="hr-4">
+        <h4>HIGH QUALITY</h4>
     </div>
+
     <!-- <footer class="container-fluid text-center">
         <p>Footer Text</p>
     </footer> -->
