@@ -2,154 +2,44 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-body {
-    background-image: url('photos/background-image.jpg');
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .container {
     text-align: center;
 }
 
-#open-sidebar {
-    margin-left: -11em;
-    font-size: 30px;
-    /* padding-top: 2em; */
-    color: white;
-    cursor: pointer;
-    /* position: absolute; */
-    line-height: 3;
+.font-20px {
+    font-size: 20px;
+    float: left;
 }
 
-#open-sidebar2 {
-    margin-left: -42em;
-    font-size: 30px;
-    /* padding-top: 2em; */
-    color: white;
-    cursor: pointer;
-    /* position: absolute; */
-    line-height: 3;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #9a0606;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-#company-logo {
-    /* margin-left: 75em; */
-    /* float: right; */
-    /* position: absolute; */
-    height: 6em;
-    margin-top: -30px;
-}
-
-.company-logo2 {
-    /* margin-left: 75em; */
-    /* float: right; */
-    /* position: relative; */
-    /* height: 18em; */
-    margin-top: 0;
-}
-
-#jackets,
-#collared-shirts,
-#tshirts,
-#pants,
-#socks,
-#shoes {
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    background: black;
-}
-
-.sideNavContent {
-    margin-top: 7%;
-}
-
-.shopping-header {
-    margin-top: -2em;
-    padding-top: 1em;
-    font-size: 2em;
-    color: #9a0606;
+#nav-title {
+    float: right;
+    font-size: 20px;
 }
 
 .fa-plus-square {
     cursor: pointer;
 }
 
-.background {
-    margin-top: -10em;
+ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
 }
 
-label {
-    color: white;
-    margin-right: 10%;
+li {
+    cursor: pointer;
 }
 
-#sell {
-    margin-right: 12%;
-    font-size: 20px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-bottom: 8px;
-    border-radius: 10%;
-    background-color: #9a0606;
-    border: none;
-    color: white;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.sell-item {
-    text-align: right;
-}
-
-textarea {
-    color: #9a0606;
+li a:hover {
+    background-color: grey;
 }
