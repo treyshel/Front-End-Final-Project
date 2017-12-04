@@ -1,5 +1,6 @@
+var TOTAL_SALE = 0;
 var CLOTHING = {
-    outerwear: [
+    jackets: [
         {
             description: 'Barn Coat',
             price: 169.99,
@@ -61,7 +62,7 @@ var CLOTHING = {
             image: 'photos/jacket_10.jpg'
         }
     ],
-    collaredshirts: [
+    shirts: [
         {
             description: 'Brushed Herringbone',
             price: 89.99,
@@ -247,7 +248,7 @@ var CLOTHING = {
             image: 'photos/pants_10.jpg'
         }
     ],
-    sockfootwear: [
+    socks: [
         {
             description: 'Invincible Socks',
             price: 49.99,
@@ -273,7 +274,7 @@ var CLOTHING = {
             image: 'photos/socks_4.jpg'
         }
     ],
-    shoefootwear: [
+    shoes: [
         {
             description: 'Australian Shearling-Lined Slippers',
             price: 199.99,
@@ -312,162 +313,48 @@ var CLOTHING = {
         }
     ]
 };
+// ******************Items***************
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
-// ******************Jackets***************
-function oneJacket(x) {
+function oneItem(x) {
     return [
-        '<br><br><br><h1>Jackets</h1><hr><br><p><img src="' +
-            x.image +
-            '"/>&emsp;',
-        '<br><br><p>Price: $' + x.price + '</p>',
+        '<div class="col-lg-3 col-sm-6 item-div">',
+        '<div class="panel panel-default"><div class="panel-body">',
+        '<p class="img-center"><img src="' + x.image + '"/></p>',
+        '<p>Price: $' + x.price + '</p>',
         '<p>In Stock: ' + x.stock + '</p>',
         '<p>Type: ' + x.description + '</p>',
-        '<button type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>'
+        '<p class="img-center"><button onclick="addToCart(' +
+            x.price +
+            ',' +
+            x.stock +
+            ')" type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button></p></div></div></div>'
     ].join('');
 }
 
-function showJackets() {
+function showItems(itemtype) {
     $('.for-sale').hide();
-    var html = CLOTHING.outerwear
-        .map(function(x) {
-            return oneJacket(x);
-        })
-        .join('');
-    $('#jackets')
-        .html(html)
-        .show();
-}
-
-// ******************collared shirts***********************
-
-function oneCollaredShirt(x) {
-    return [
-        '<br><br><br><h1>Collared Shirts</h1><hr><br><p><img src="' +
-            x.image +
-            '"/>&emsp;',
-        '<br><br><p>Price: $' + x.price + '</p>',
-        '<p>In Stock: ' + x.stock + '</p>',
-        '<p>Type: ' + x.description + '</p>',
-        '<button type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>'
-    ].join('');
-}
-
-function showCollaredShirts() {
-    $('.for-sale').hide();
-    var html = CLOTHING.collaredshirts
-        .map(function(x) {
-            return oneCollaredShirt(x);
-        })
-        .join('');
-    $('#collared-shirts')
-        .html(html)
-        .show();
-}
-
-// **************t shirts****************
-
-function oneTshirt(x) {
-    return [
-        '<br><br><br><h1>T-Shirts</h1><hr><br><p><img src="' +
-            x.image +
-            '"/>&emsp;',
-        '<br><br><p>Price: $' + x.price + '</p>',
-        '<p>In Stock: ' + x.stock + '</p>',
-        '<p>Type: ' + x.description + '</p>',
-        '<button type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>'
-    ].join('');
-}
-
-function showTshirts() {
-    $('.for-sale').hide();
-    var html = CLOTHING.tshirts
-        .map(function(x) {
-            return oneTshirt(x);
-        })
-        .join('');
-    $('#tshirts')
-        .html(html)
-        .show();
-}
-
-// ****************pants*****************
-
-function onePants(x) {
-    return [
-        '<br><br><br><h1>Pants</h1><hr><br><p><img src="' +
-            x.image +
-            '"/>&emsp;',
-        '<br><br><p>Price: $' + x.price + '</p>',
-        '<p>In Stock: ' + x.stock + '</p>',
-        '<p>Type: ' + x.description + '</p>',
-        '<button type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>'
-    ].join('');
-}
-
-function showPants() {
-    $('.for-sale').hide();
-    var html = CLOTHING.pants
-        .map(function(x) {
-            return onePants(x);
-        })
-        .join('');
-    $('#pants')
-        .html(html)
-        .show();
-}
-
-// **************socks***************
-
-function oneSocks(x) {
-    return [
-        '<br><br><br><h1>Socks</h1><hr><br><p><img src="' +
-            x.image +
-            '"/>&emsp;',
-        '<br><br><p>Price: $' + x.price + '</p>',
-        '<p>In Stock: ' + x.stock + '</p>',
-        '<p>Type: ' + x.description + '</p>',
-        '<button type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>'
-    ].join('');
-}
-
-function showSocks() {
-    $('.for-sale').hide();
-    var html = CLOTHING.sockfootwear
-        .map(function(x) {
-            return oneSocks(x);
-        })
-        .join('');
-    $('#socks')
-        .html(html)
-        .show();
-}
-
-// **************shoes***************
-
-function oneShoes(x) {
-    return [
-        '<br><br><br><h1>Shoes</h1><hr><br><p><img src="' +
-            x.image +
-            '"/>&emsp;',
-        '<br><br><p>Price: $' + x.price + '</p>',
-        '<p>In Stock: ' + x.stock + '</p>',
-        '<p>Type: ' + x.description + '</p>',
-        '<button type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>'
-    ].join('');
-}
-
-function showShoes() {
-    $('.for-sale').hide();
-    var html = CLOTHING.shoefootwear
-        .map(function(x) {
-            return oneShoes(x);
-        })
-        .join('');
-    $('#shoes')
+    var html =
+        '<br><br><br><h1 id="clothing-title">' +
+        capitalizeFirstLetter(itemtype) +
+        '</h1><br>' +
+        CLOTHING[itemtype]
+            .map(function(x) {
+                return oneItem(x);
+            })
+            .join('');
+    $('#' + itemtype)
         .html(html)
         .show();
 }
 
 // ***********add to cart********
 
-// function addToCart() {}
+function addToCart(amount, stock) {
+    stock -= 1;
+    TOTAL_SALE += amount;
+    var html = '<p class="navbar-cart"> Total: $' + TOTAL_SALE + '</p>';
+    html += TOTAL_SALE + $('.navbar-cart').html(html);
+}
