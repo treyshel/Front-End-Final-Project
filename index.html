@@ -37,6 +37,9 @@
                     <a onclick="showItems('socks')" class="font-20px">Socks</a>
                 </li>
                 <li>
+                    <a onclick="sell()" class="font-20px">Sell Clothing</a>
+                </li>
+                <li>
                     <a class="navbar-cart" href="#cart" onclick="showCart()">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>Total: $0.00</a>
                 </li>
@@ -64,6 +67,42 @@
         <div id="socks" class="for-sale row"></div>
     </div>
     <div class="container col-lg-12 col-sm-12 hide" id="cart"></div>
+    <div id="sell-item-form" class="container col-lg-3 col-sm-3 hide">
+        <form onsubmit="addtoClothing()">
+            <!-- <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted"></small>
+            </div> -->
+            <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Description of your item</label>
+                <input type="text" class="form-control" id="description">
+            </div>
+            <div class="form-group">
+                <label for="exampleSelect1">What type of clothing?</label>
+                <select class="form-control" id="type">
+                    <option>jackets</option>
+                    <option>shirts</option>
+                    <option>tshirts</option>
+                    <option>pants</option>
+                    <option>shoes</option>
+                    <option>socks</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">How much are you wanting to sell it for?</label>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" id="price" placeholder="Amount">
+                        <div class="input-group-addon">.00</div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
     <!-- <div class="footer">
         <p>BASE CAMP</p>
     </div> -->
