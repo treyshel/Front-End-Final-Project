@@ -37,7 +37,7 @@
                     <a onclick="showItems('socks')" class="font-20px">Socks</a>
                 </li>
                 <li>
-                    <a class="navbar-cart">
+                    <a class="navbar-cart" href="#cart" onclick="showCart()">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>Total: $0.00</a>
                 </li>
             </ul>
@@ -54,7 +54,7 @@
         <h4>HIGH QUALITY</h4>
         <hr id="hr-5">
     </div>
-    <div class="container">
+    <div class="container buy-items">
         <div id="jackets" class="for-sale row">
         </div>
         <div id="shirts" class="for-sale row"></div>
@@ -62,8 +62,8 @@
         <div id="pants" class="for-sale row"></div>
         <div id="shoes" class="for-sale row"></div>
         <div id="socks" class="for-sale row"></div>
-        <div id="cart" class="for-sale row"></div>
     </div>
+    <div class="container col-lg-12 col-sm-12 hide" id="cart"></div>
     <!-- <div class="footer">
         <p>BASE CAMP</p>
     </div> -->
