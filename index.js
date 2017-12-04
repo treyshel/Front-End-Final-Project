@@ -326,11 +326,9 @@ function oneItem(x) {
         '<p>Price: $' + x.price + '</p>',
         '<p>In Stock: ' + x.stock + '</p>',
         '<p>Type: ' + x.description + '</p>',
-        '<p class="img-center"><button onclick="addToCart(' +
-            x.price +
-            ',' +
-            x.stock +
-            ')" type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button></p></div></div></div>'
+        '<p class="img-center"><button onclick=\'addToCart(' +
+            JSON.stringify(x) +
+            ')\' type="button" class="btn btn-success">add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button></p></div></div></div>'
     ].join('');
 }
 
@@ -352,9 +350,33 @@ function showItems(itemtype) {
 
 // ***********add to cart********
 
-function addToCart(amount, stock) {
-    stock -= 1;
-    TOTAL_SALE += amount;
+function addToCart(x) {
+    x.stock -= 1;
+    TOTAL_SALE += x.price;
     var html = '<p class="navbar-cart"> Total: $' + TOTAL_SALE + '</p>';
     html += TOTAL_SALE + $('.navbar-cart').html(html);
+    $('#cart').prepend(
+        '<div class="col-lg-3 col-sm-6">' +
+            '<h1>Checkout</h2>' +
+            '<div class="panel panel-default"><div class="panel-body">' +
+            '<p class="img-center"><img src="' +
+            x.image +
+            '"/></p>' +
+            '<p>Price: $' +
+            x.price +
+            '</p>' +
+            '<p>In Stock: ' +
+            x.stock +
+            '</p>' +
+            '<p>Type: ' +
+            x.description +
+            '</p></div></div></div>'
+    );
+}
+
+function showCart() {
+    $('.buy-items').hide();
+    $('#cart')
+        .removeClass('hide')
+        .show();
 }
