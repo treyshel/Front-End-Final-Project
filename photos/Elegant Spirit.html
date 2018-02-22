@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///home/basecamp/JavaScrcript/November/online-store/index.html?#cart -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elegant Spirit</title>
+    <link rel="stylesheet" href="./Elegant Spirit_files/bootstrap.css">
+    <link rel="stylesheet" href="./Elegant Spirit_files/font-awesome.css">
+    <link rel="stylesheet" href="./Elegant Spirit_files/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="file:///home/basecamp/JavaScrcript/November/online-store/index.html?#">Elegant Spirit</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a onclick="showItems(&#39;jackets&#39;)" class="font-20px">Jackets</a>
+                </li>
+                <li>
+                    <a onclick="showItems(&#39;shirts&#39;)" class="font-20px">Collared Shirts</a>
+                </li>
+                <li>
+                    <a onclick="showItems(&#39;tshirts&#39;)" class="font-20px">T-Shirts</a>
+                </li>
+                <li>
+                    <a onclick="showItems(&#39;pants&#39;)" class="font-20px">Pants</a>
+                </li>
+                <li>
+                    <a onclick="showItems(&#39;shoes&#39;)" class="font-20px">Shoes</a>
+                </li>
+                <li>
+                    <a onclick="showItems(&#39;socks&#39;)" class="font-20px">Socks</a>
+                </li>
+                <li>
+                    <a class="navbar-cart" href="file:///home/basecamp/JavaScrcript/November/online-store/index.html?#cart" onclick="showCart()">
+                        <p class="navbar-cart"> Total: $179.98</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="homepage for-sale row" style="display: none;">
+        <hr id="hr-1">
+        <h1>ELEGANT SPIRIT CLOTHING CO.</h1>
+        <hr id="hr-2">
+        <h2>SATISFACTION GUARANTEED</h2>
+        <hr id="hr-3">
+        <h3>SPEEDY DELIVERY</h3>
+        <hr id="hr-4">
+        <h4>HIGH QUALITY</h4>
+        <hr id="hr-5">
+    </div>
+    <div class="container">
+        <div id="jackets" class="for-sale row" style="display: none;">
+        </div>
+        <div id="shirts" class="for-sale row" style="">
+            <br>
+            <br>
+            <br>
+            <h1 id="clothing-title">Shirts</h1>
+            <br>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_1.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Brushed Herringbone</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Brushed Herringbone&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_1.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_2.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Tartan Long-Sleeved Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Tartan Long-Sleeved Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_2.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_3.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Signature Twill Long-Sleeved Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Signature Twill Long-Sleeved Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_3.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_4.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Pure Cotton Denim Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Pure Cotton Denim Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_4.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_5.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Hidden-Button-Down Wrinkle-Free Cotton Twill Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Hidden-Button-Down Wrinkle-Free Cotton Twill Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_5.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_6.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Heathered Houndstooth Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Heathered Houndstooth Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_6.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_7.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Tech Chambray Work Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Tech Chambray Work Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_7.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_8.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Luxury Flannel Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Luxury Flannel Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_8.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_9.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Bush Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Bush Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_9.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 item-div" style="display: none;">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="img-center">
+                            <img src="./Elegant Spirit_files/collared_10.jpg">
+                        </p>
+                        <p>Price: $89.99</p>
+                        <p>In Stock: 10</p>
+                        <p>Type: Corded Long-Sleeved Shirt</p>
+                        <p class="img-center">
+                            <button onclick="addToCart({&quot;description&quot;:&quot;Corded Long-Sleeved Shirt&quot;,&quot;price&quot;:89.99,&quot;stock&quot;:10,&quot;image&quot;:&quot;photos/collared_10.jpg&quot;})"
+                                type="button" class="btn btn-success">add to cart
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tshirts" class="for-sale row" style="display: none;"></div>
+        <div id="pants" class="for-sale row" style="display: none;"></div>
+        <div id="shoes" class="for-sale row" style="display: none;"></div>
+        <div id="socks" class="for-sale row" style="display: none;"></div>
+        <div id="cart" class="for-sale row" style="">
+            <div class="panel panel-default">
+                <div class="panel-body"></div>
+            </div>
+            <p class="img-center">
+                <img src="./Elegant Spirit_files/collared_2.jpg">
+            </p>
+            <p>Price: $89.99</p>
+            <p>In Stock: 9</p>
+            <p>Type: Tartan Long-Sleeved Shirt</p>
+            <div class="panel panel-default">
+                <div class="panel-body"></div>
+            </div>
+            <p class="img-center">
+                <img src="./Elegant Spirit_files/collared_1.jpg">
+            </p>
+            <p>Price: $89.99</p>
+            <p>In Stock: 9</p>
+            <p>Type: Brushed Herringbone</p>
+        </div>
+    </div>
+    <div class="container col-lg-12 col-sm-12 hide" id="cart"></div>
+    <!-- <div class="footer">
+        <p>BASE CAMP</p>
+    </div> -->
+
+    <script src="./Elegant Spirit_files/jquery.js"></script>
+    <script src="./Elegant Spirit_files/bootstrap.js"></script>
+    <script src="./Elegant Spirit_files/index.js"></script>
+
+
+</body>
+
+</html>
